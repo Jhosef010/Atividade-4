@@ -1,4 +1,5 @@
-programa {
+programa
+{
  inclua biblioteca Matematica --> mat
   funcao inicio()
  {
@@ -34,3 +35,22 @@ programa {
      {
        escreva("A equação não possui raízes reais.")
      }
+     senao se (delta == 0)
+     {
+       x1 = (-b + mat.raiz(delta, 2.0)) / (2 * a)
+       escreva("A equação possui uma única raiz real: X = ", x1)
+     }
+     senao
+     {
+       x1 = (-b + mat.raiz(delta, 2.0)) / (2 * a)
+       x2 = (-b - mat.raiz(delta, 2.0)) / (2 * a)
+      
+       escreva("Raiz X1 = ", x1, "\n")
+       escreva("Raiz X2 = ", x2, "\n")
+     }
+   }
+ }
+}
+
+
+
