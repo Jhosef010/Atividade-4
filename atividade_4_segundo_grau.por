@@ -1,5 +1,4 @@
-programa
-{
+programa {
  inclua biblioteca Matematica --> mat
   funcao inicio()
  {
@@ -29,3 +28,9 @@ programa
      delta = (b * b) - (4 * a * c)
     
      escreva("\nO valor de Delta é: ", delta, "\n")
+
+
+     se (delta < 0)
+     {
+       escreva("A equação não possui raízes reais.")
+     }
